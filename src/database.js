@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
+dotenv.config();
 mongoose
-  .connect("mongodb://localhost/mean-employees", {
+  .connect(process.env.DATABASE, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
