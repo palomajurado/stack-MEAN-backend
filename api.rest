@@ -1,26 +1,26 @@
 ###
-GET http://localhost:4000/api/employees
+GET https://api-colaborator-employees.herokuapp.com/api/employees
 
 ###
-POST http://localhost:4000/api/employees
+POST https://api-colaborator-employees.herokuapp.com/api/employees
 Content-Type: application/json
 
 {
-  "name":"Paloma22",
-  "position":"Front-end Developer",
-  "office":"Lima",
-  "salary":"b-20"
+  "name":"Juan López",
+  "position":"Snr. Back-end",
+  "office":"España",
+  "salary":"S/.5000"
 }
 
 ###
-Get http://localhost:4000/api/employees/5f66c32dfea6829b1ea9333e
+Get https://api-colaborator-employees.herokuapp.com/api/employees/5f67d52ec8fcdc2c8efa6b26
 
 ###
 
-DELETE  http://localhost:4000/api/employees/5f66bbd5fea6829b1ea9333d
+DELETE  https://api-colaborator-employees.herokuapp.com/api/employees/5f67d52ec8fcdc2c8efa6b26
 
 ###
-PUT  http://localhost:4000/api/employees/5f66c32dfea6829b1ea9333e
+PUT  https://api-colaborator-employees.herokuapp.com/api/employees/5f67d52ec8fcdc2c8efa6b26
 Content-Type: application/json
 
 {
