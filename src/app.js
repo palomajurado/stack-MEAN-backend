@@ -13,6 +13,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.get("/", (req, res) => res.json("Bienvenido"));
 app.use("/api/employees", require("./routes/employees.routes"));
 
 module.exports = app;
